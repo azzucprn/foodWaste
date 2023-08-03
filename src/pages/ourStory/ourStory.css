@@ -1,0 +1,43 @@
+.navbar {
+  height: 3.5rem;
+}
+
+.story-container-card {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  background-color: #8ecfa0;
+  height: 35rem;
+}
+
+.story-container {
+  display: flex;
+  background-color: lightcoral;
+  padding: 1.5rem;
+  height: 32rem;
+  border-radius: 0.5rem;
+}
+
+.main-img-cont {
+  width: 25rem;
+  height: 30rem;
+  margin-right: 1rem;
+}
+
+.main-img {
+  width: 25rem;
+  height: 25rem;
+  /* object-fit: contain; */
+  border-radius: 0.5rem;
+}
+
+.story-container-text {
+  width: 25rem;
+  height: 30rem;
+}
+
+.para1,
+.para2 {
+  text-align: justify;
+  width: 25rem;
+}

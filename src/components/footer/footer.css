@@ -1,0 +1,30 @@
+.footer-cont {
+  height: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightgreen;
+  width: 100%;
+  padding: 0.3rem;
+  position: fixed;
+  bottom: 0px;
+  text-align: center;
+}
+
+.footer-para {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.socialLinkContainer {
+  margin-left: 1rem;
+  width: 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  font-size: 1.2rem;
+  color: #000;
+}

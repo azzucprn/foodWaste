@@ -1,0 +1,25 @@
+.availbleFoodContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.foodContainer {
+  margin-bottom: 0.2rem;
+}
+
+.foodImgContainer {
+  margin: 0.1rem;
+  padding: 0.1rem;
+}
+
+.food-image {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+.foodInfoContainer {
+  margin: 0.1rem;
+  padding: 0.1rem;
+}

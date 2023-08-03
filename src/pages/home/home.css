@@ -1,0 +1,82 @@
+/* styling the two buttons present on the landing page under the main logo */
+
+.home-hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 15rem);
+}
+
+.logo-wrapper {
+  margin-bottom: 2rem;
+}
+
+.btn {
+  border: 1px solid black;
+  height: 3rem;
+  font-size: 1.1rem;
+  transition-delay: 4ms;
+}
+
+.btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* styling the social media links */
+.social-media {
+  background-color: #8ecfa0;
+  text-align: right;
+  padding-right: 20px;
+  position: relative;
+  bottom: 10px;
+}
+
+.social-media a {
+  margin: 0 8px;
+  color: Black;
+  font-size: 20px;
+}
+
+.social-media a:hover {
+  color: white;
+}
+
+.main-btn {
+  background-color: #8ecfa0 !important;
+  border: 1px solid black !important;
+  font-size: 1.1rem !important;
+  color: #000 !important;
+}
+
+.main-btn:hover {
+  background-color: black !important;
+  border: none;
+  color: white !important;
+}
+
+@media screen and (max-width: 560px) {
+  .navbar-btn-list-cont {
+    display: none !important;
+  }
+
+  .bread-menu-cont {
+    margin-right: 3rem;
+    display: block;
+  }
+
+  .bread-menu {
+    cursor: pointer;
+  }
+
+  .footer-links-cont {
+    height: 2.5rem;
+    background-color: lightgreen;
+    width: 100%;
+    /* padding: 0.3rem; */
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+  }
+}

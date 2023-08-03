@@ -1,0 +1,59 @@
+/* styling the items of the help.html page */
+/* positioning the sub-logo in the upper left corner*/
+.nav-header {
+  width: 100%;
+}
+
+img.header-logo {
+  width: 15rem;
+  height: 5rem;
+  object-fit: contain;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.table {
+  width: 50rem !important;
+}
+
+.table,
+tr,
+td,
+th {
+  font-size: 1.2rem;
+  background-color: #8ecfa0 !important;
+  border: 1px solid #000000 !important;
+}
+
+.bottom-info-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btn-container {
+  margin-top: 0.6rem;
+}
+
+.bottom-btn {
+  text-decoration: none;
+  background-color: #8ecfa0;
+  color: black;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1.5px solid black !important;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.bottom-btn:hover {
+  color: #fff;
+  background-color: #000000;
+}
