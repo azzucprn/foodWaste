@@ -121,16 +121,28 @@ export default function Navbar({ isHome }) {
                     Contact
                   </Link>
                 </li>
-                <li className="popup-list-item">
-                  <Link className="popup-link" to="/login">
-                    Log In
-                  </Link>
-                </li>
-                <li className="popup-list-item">
-                  <Link className="popup-link" to="/register">
-                    Sign Up
-                  </Link>
-                </li>
+                {!user ? (
+                  <div className="popup-user-cont">
+                    <li className="popup-list-item">
+                      <Link className="popup-link" to="/login">
+                        Log In
+                      </Link>
+                    </li>
+                    <li className="popup-list-item">
+                      <Link className="popup-link" to="/register">
+                        Sign Up
+                      </Link>
+                    </li>
+                  </div>
+                ) : (
+                  <div className="popup-user-logout-cont">
+                    <li className="popup-list-item">
+                      <Link className="popup-link" to="/login">
+                        Log Out
+                      </Link>
+                    </li>
+                  </div>
+                )}
               </ul>
             </div>
           )}
