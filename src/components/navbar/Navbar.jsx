@@ -1,12 +1,13 @@
 import { Link, useNavigate } from "react-router-dom";
 import "./navbar.css";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import myContext from "../../../context/context";
 import axios from "axios";
 
 export default function Navbar({ isHome }) {
   const navigate = useNavigate();
   const { user, setUser } = useContext(myContext);
+  const [showPopup, setShowPopup] = useState(false);
 
   const handleLogout = async () => {
     try {
@@ -19,6 +20,7 @@ export default function Navbar({ isHome }) {
   };
 
   // console.log(isHome);
+  console.log(showPopup);
   return (
     <div>
       <div
@@ -99,37 +101,39 @@ export default function Navbar({ isHome }) {
         <div className="bread-menu-cont">
           <i
             className="fa-solid fa-bars bread-menu"
-            // onclick="togglePopup()"
+            onClick={() => setShowPopup(!showPopup)}
           ></i>
-          <div className="popup-cont" id="popup">
-            <ul>
-              <li className="popup-list-item">
-                <a className="popup-link" href="index.html">
-                  Home
-                </a>
-              </li>
-              <li className="popup-list-item">
-                <a className="popup-link" href="OurStory.html">
-                  Our Story
-                </a>
-              </li>
-              <li className="popup-list-item">
-                <a className="popup-link" href="Contact.html">
-                  Contact
-                </a>
-              </li>
-              <li>
-                <a className="popup-link" href="login.html">
-                  Log In
-                </a>
-              </li>
-              <li>
-                <a className="popup-link" href="register.html">
-                  Sign Up
-                </a>
-              </li>
-            </ul>
-          </div>
+          {showPopup && (
+            <div className="popup-cont">
+              <ul>
+                <li className="popup-list-item">
+                  <Link className="popup-link" to="/">
+                    Home
+                  </Link>
+                </li>
+                <li className="popup-list-item">
+                  <Link className="popup-link" to="/OurStory">
+                    Our Story
+                  </Link>
+                </li>
+                <li className="popup-list-item">
+                  <Link className="popup-link" to="/contactUs">
+                    Contact
+                  </Link>
+                </li>
+                <li className="popup-list-item">
+                  <Link className="popup-link" to="/login">
+                    Log In
+                  </Link>
+                </li>
+                <li className="popup-list-item">
+                  <Link className="popup-link" to="/register">
+                    Sign Up
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          )}
         </div>
       </div>
     </div>

@@ -1,0 +1,17 @@
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: lightgreen;
+  width: 50%;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.login-form {
+  width: 100%;
+}

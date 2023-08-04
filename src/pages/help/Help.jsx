@@ -20,7 +20,10 @@ export default function Help() {
       </div>
       <div className="hero-container">
         <div className="left-container">
-          <h2>You're doing the right thing,the easiest possible way</h2>
+          <h2>
+            You're doing the right thing,<span className="lineBreak"></span>the
+            easiest possible way
+          </h2>
         </div>
         <div className="right-container mt-2">
           <table className="table table-bordered table-hover">

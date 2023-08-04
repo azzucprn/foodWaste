@@ -4,7 +4,7 @@ import PageFooter from "../../components/footer/Footer";
 
 export default function OurStory() {
   return (
-    <div>
+    <div className="ourStory">
       <Navbar />
       <div className="story-container-card">
         <div className="story-container">

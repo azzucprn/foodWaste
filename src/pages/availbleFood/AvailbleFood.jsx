@@ -30,7 +30,7 @@ export default function AvailbleFood() {
     fetchData();
   }, []);
 
-  console.log(foodList);
+  // console.log(foodList);
 
   return (
     <>

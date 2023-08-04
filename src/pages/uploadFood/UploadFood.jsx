@@ -35,11 +35,11 @@ export default function UploadFood() {
   return (
     <div className="uploadFood">
       <Navbar />
-      <div className="uploadFoodContainer mt-3">
+      <div className="uploadFoodContainer">
         <form
           id="imageForm"
           encType="multipart/form-data"
-          className="w-50 p-2 mt-2"
+          className=" p-2 mt-2"
           onSubmit={handleSubmit}
         >
           <h2 className="m-2 text-center">
@@ -87,7 +87,7 @@ export default function UploadFood() {
             />
           </div>
           <div className="submit-btn-container d-flex align-items-center justify-content-center">
-            <button type="submit" className="btn btn-success w-25 main-btn">
+            <button type="submit" className="btn btn-success main-btn">
               Upload
             </button>
           </div>

@@ -7,26 +7,28 @@
   justify-content: center;
   align-items: center;
   background-color: #8ecfa0;
-  height: 35rem;
+  height: calc(100vh - 8rem);
+  width: 100%;
 }
 
 .story-container {
   display: flex;
-  background-color: lightcoral;
+  justify-content: center;
+  align-items: center;
   padding: 1.5rem;
-  height: 32rem;
+  height: 100%;
   border-radius: 0.5rem;
 }
 
 .main-img-cont {
-  width: 25rem;
+  width: 40%;
   height: 30rem;
   margin-right: 1rem;
 }
 
 .main-img {
-  width: 25rem;
-  height: 25rem;
+  width: 100%;
+  height: 100%;
   /* object-fit: contain; */
   border-radius: 0.5rem;
 }
@@ -40,4 +42,30 @@
 .para2 {
   text-align: justify;
   width: 25rem;
+}
+
+@media screen and (max-width: 560px) {
+  .story-container {
+    width: 30rem;
+    height: 38rem;
+    background-color: lightcoral;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .main-img-cont {
+    width: 20rem;
+    border-radius: 0.5rem;
+  }
+
+  .main-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .story-container-text {
+  }
 }

@@ -1,10 +1,18 @@
 .availbleFoodContainer {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%;
 }
 
 .foodContainer {
   margin-bottom: 0.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.foodContainer:last-child {
+  margin-bottom: 3rem;
 }
 
 .foodImgContainer {
@@ -20,6 +28,15 @@
 }
 
 .foodInfoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: 0.1rem;
   padding: 0.1rem;
+}
+
+@media screen and (max-width: 830px) {
+  .availbleFoodContainer {
+    justify-content: center;
+  }
 }

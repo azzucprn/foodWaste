@@ -17,10 +17,10 @@ export default function Home() {
         </div>
         <div className="home-btn-cont">
           <Link to="/help">
-            <button className="btn mx-1">Share Your Leftover Food</button>
+            <button className="btn m-2">Share Your Leftover Food</button>
           </Link>
           <Link to="/availbleFood">
-            <button className="btn mx-1">Leftover Food Around You</button>
+            <button className="btn m-1">Leftover Food Around You</button>
           </Link>
         </div>
       </div>

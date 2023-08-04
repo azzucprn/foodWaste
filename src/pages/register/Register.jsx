@@ -24,10 +24,10 @@ export default function Register() {
   };
 
   return (
-    <div className="register mt-3">
+    <div className="register">
       <div className="container d-flex justify-content-center align-items-center mt-2">
         <form
-          className="w-50 p-2 rounded-2"
+          className="p-2 rounded-2"
           id="registrationForm"
           onSubmit={handleSubmit}
         >
@@ -89,7 +89,7 @@ export default function Register() {
           </div>
 
           <div className="btn-container d-flex justify-content-center align-items-center">
-            <button type="submit " className="btn w-25 mb-2">
+            <button type="submit " className="btn mb-2">
               Register
             </button>
           </div>

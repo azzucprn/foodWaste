@@ -2,6 +2,7 @@ import { useContext, useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import myContext from "../../../context/context";
+import "./login.css";
 
 export default function Login() {
   const { setUser } = useContext(myContext);
@@ -25,10 +26,10 @@ export default function Login() {
   };
 
   return (
-    <div className="login mt-3">
+    <div className="login">
       <div className="container d-flex justify-content-center align-items-center mt-2">
         <form
-          className="w-50 p-1 rounded-2 h-50"
+          className="login-form p-1 rounded-2 h-50"
           id="loginForm"
           onSubmit={handleSubmit}
         >

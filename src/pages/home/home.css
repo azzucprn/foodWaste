@@ -1,5 +1,3 @@
-/* styling the two buttons present on the landing page under the main logo */
-
 .home-hero-container {
   display: flex;
   flex-direction: column;
@@ -10,6 +8,17 @@
 
 .logo-wrapper {
   margin-bottom: 2rem;
+}
+
+.home-logo {
+  width: 40rem;
+  object-fit: contain;
+}
+
+.home-btn-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn {
@@ -68,6 +77,10 @@
 
   .bread-menu {
     cursor: pointer;
+  }
+
+  .home-logo {
+    width: 20rem;
   }
 
   .footer-links-cont {

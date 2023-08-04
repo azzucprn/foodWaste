@@ -61,7 +61,7 @@ export default function ContactUS() {
           </div>
           <div className="home-submit-btn-container d-flex justify-content-center align-items-center">
             <button
-              className="btn main-btn w-25"
+              className="btn"
               data-bs-toggle="modal"
               data-bs-target="#myModal"
               id="contactUs-submit-btn"
