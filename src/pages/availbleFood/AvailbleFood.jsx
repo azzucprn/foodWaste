@@ -20,7 +20,7 @@ export default function AvailbleFood() {
     const fetchData = async () => {
       try {
         const fetchedFoodList = await axios.get(
-          "http://localhost:5000/fetchFood"
+          "https://foodsharing-backend.onrender.com/fetchFood"
         );
         setFoodList(fetchedFoodList.data);
       } catch (error) {

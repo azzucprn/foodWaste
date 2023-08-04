@@ -15,7 +15,10 @@ export default function Register() {
       password: password,
     };
     try {
-      const res = axios.post("http://localhost:5000/register", obj);
+      const res = axios.post(
+        "https://foodsharing-backend.onrender.com/register",
+        obj
+      );
       console.log("data posted successfully...");
       window.location.replace("/login");
     } catch (err) {

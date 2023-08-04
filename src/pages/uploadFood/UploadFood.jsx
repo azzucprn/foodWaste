@@ -20,7 +20,10 @@ export default function UploadFood() {
     try {
       // Send data to backend
       console.log(formData);
-      await axios.post("http://localhost:5000/uploadFood", formData);
+      await axios.post(
+        "https://foodsharing-backend.onrender.com/uploadFood",
+        formData
+      );
       alert("Data uploaded successfully...");
       window.location.replace("/availbleFood");
     } catch (error) {

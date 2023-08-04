@@ -16,7 +16,10 @@ export default function Login() {
       password: password,
     };
     try {
-      const res = await axios.post("http://localhost:5000/login", obj);
+      const res = await axios.post(
+        "https://foodsharing-backend.onrender.com/login",
+        obj
+      );
       console.log("data posted successfully...");
       setUser(true);
       navigate("/");
